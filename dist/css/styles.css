@@ -1,0 +1,211 @@
+/*
+ * Estilos para o plugin QRCODE 10 Generator.
+ */
+.qrcode10-generator {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.qrcode10-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .qrcode10-content-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Estilos de contêineres principais */
+.qrcode10-form-container,
+.qrcode10-preview-container {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.qrcode10-preview-container {
+    text-align: center;
+}
+
+/* Estilos para a área de pré-visualização */
+.qrcode10-preview {
+    display: inline-block;
+    padding: 20px;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+    min-height: 250px;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    line-height: 0;
+}
+
+.qrcode10-preview svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.qrcode10-preview p {
+    color: #888;
+}
+
+
+#qrcode-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    padding: 20px;
+}
+
+#qrcode-preview {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    box-sizing: border-box !important; /* Importante para o tamanho com borda */
+    padding: 20px; /* Espaçamento padrão */
+    margin: 0 auto !important; /* Centralização usando margens */
+}
+
+/* Estilos de inputs e grupos de formulário */
+.qrcode10-input-group {
+    margin-bottom: 15px;
+}
+
+.qrcode10-input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.qrcode10-input-group input[type="text"],
+.qrcode10-input-group input[type="number"],
+.qrcode10-input-group select {
+    width: 100%;
+    max-width: 350px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.qrcode10-input-group input[type="color"] {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.qrcode10-input-group input[type="file"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.qrcode10-input-group input[type="checkbox"] {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* --- ESTILOS FREEMIUM --- */
+
+/* Estilos para os campos premium desabilitados */
+.qrcode10-premium-field.disabled-field label {
+    color: #999;
+    font-style: italic;
+}
+
+.qrcode10-premium-field.disabled-field .qrcode10-input-group {
+    position: relative;
+}
+
+/* O cadeado só aparece quando o contêiner tem a classe 'disabled-field' */
+.qrcode10-premium-field.disabled-field .qrcode10-input-group::after {
+    content: '🔒';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 1.2em;
+    color: #888;
+}
+
+/* Estilo para inputs e selects desabilitados */
+.qrcode10-premium-field.disabled-field input[disabled],
+.qrcode10-premium-field.disabled-field select[disabled],
+.qrcode10-premium-field.disabled-field textarea[disabled],
+.qrcode10-premium-field.disabled-field input[type="color"][disabled] {
+    cursor: not-allowed !important;
+    background-color: #f7f7f7 !important;
+    border-color: #e0e0e0 !important;
+}
+
+/* Remove a sobreposição do ícone de cadeado em campos de cor */
+.qrcode10-premium-field.disabled-field .qrcode10-input-group input[type="color"]::after {
+    content: none;
+}
+
+/* Estilos para a seção de licença */
+.qrcode10-license-container {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+#license-status-message {
+    margin-bottom: 15px;
+}
+
+.qrcode10-status-badge {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+}
+
+.qrcode10-status-badge.active {
+    background-color: #28a745; /* Verde */
+}
+
+.qrcode10-status-badge.inactive {
+    background-color: #dc3545; /* Vermelho */
+}
+
+/* Estilos para os botões */
+.button {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.qrcode10-download-options button {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#qrcode-generator-form h2,
+.qrcode10-license-container h2 {
+    font-size: 1.5em;
+    border-bottom: 2px solid #0073aa;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+#unlicensed-message {
+    padding: 15px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
