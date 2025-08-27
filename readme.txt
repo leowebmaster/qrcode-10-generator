@@ -1,6 +1,6 @@
 === QRCODE 10 Generator ===
 Contributors: leowebmaster
-Tags: qrcode, qr code generator, customization, modern qr, business, utility, colors, png, svg
+Tags: qrcode, qr code generator, customization, modern qr, png
 Requires at least: 5.8
 Tested up to: 6.8
 Stable tag: 1.0
@@ -8,9 +8,14 @@ Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
+Short Description 
+
+Um gerador de QR Code gratuito e simples com opções de personalização para sites WordPress.
+
 == Description ==
 
 O **QRCODE 10 Generator** é um plugin de ponta para WordPress que permite criar QR Codes totalmente personalizados e visualmente deslumbrantes diretamente do seu painel. Diferente de geradores genéricos, nosso plugin oferece opções de personalização avançadas, permitindo que você crie QR Codes que combinam perfeitamente com a identidade visual da sua marca.
+
 
 **Principais funcionalidades gratuitas:**
 
@@ -34,9 +39,9 @@ O **QRCODE 10 Generator** é um plugin de ponta para WordPress que permite criar
 
 == Installation ==
 
-1.  Faça o upload da pasta `qrcode-10-generator` para o diretório `/wp-content/plugins/` ou instale-o diretamente no painel do WordPress.
-2.  Ative o plugin através do menu 'Plugins' no WordPress.
-3.  Vá para a nova página "QRCODE 10" no seu painel para começar a criar.
+1. Faça o upload da pasta `qrcode-10-generator` para o diretório `/wp-content/plugins/` ou instale-o diretamente no painel do WordPress.
+2. Ative o plugin através do menu 'Plugins' no WordPress.
+3. Vá para a nova página "QRCODE 10" no seu painel para começar a criar.
 
 == Frequently Asked Questions ==
 
@@ -50,11 +55,11 @@ A versão gratuita permite o download em PNG. Com a versão premium, além da PN
 
 == Screenshots ==
 
-1. (caminho relativo da imagem: `assets/screenshot-1.png`) Tela de geração de QR Codes.
-2. (caminho relativo da imagem: `assets/screenshot-2.png`) Opções de personalização da versão gratuita.
-3. (caminho relativo da imagem: `assets/screenshot-3.png`) Recursos premium destacando módulos personalizados.
-4. (caminho relativo da imagem: `assets/screenshot-4.png`) Recursos premium destacando a inclusão de logo.
-5. (caminho relativo da imagem: `assets/screenshot-5.png`) Design responsivo do painel.
+1. (caminho relativo da imagem: `assets/screenshot-1.png`)
+2. (caminho relativo da imagem: `assets/screenshot-2.png`)
+3. (caminho relativo da imagem: `assets/screenshot-3.png`)
+4. (caminho relativo da imagem: `assets/screenshot-4.png`)
+5. (caminho relativo da imagem: `assets/screenshot-5.png`)
 
 == Changelog ==
 

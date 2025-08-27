@@ -9,14 +9,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-08-27T01:50:40+00:00\n"
+"POT-Creation-Date: 2025-08-27T08:54:04+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: qrcode-10-generator\n"
 
 #. Plugin Name of the plugin
 #: qrcode10-generator.php
-#: qrcode10-generator.php:33
+#: qrcode10-generator.php:35
 msgid "QRCODE 10 Generator"
 msgstr ""
 
@@ -172,10 +172,10 @@ msgstr ""
 msgid "Download SVG e outros recursos avançados disponíveis na versão PRO."
 msgstr ""
 
-#: qrcode10-generator.php:35
+#: qrcode10-generator.php:37
 msgid "QRCODE 10"
 msgstr ""
 
-#: qrcode10-generator.php:69
+#: qrcode10-generator.php:71
 msgid "QR Code Generator (Free Version) - Configure no painel de administração."
 msgstr ""

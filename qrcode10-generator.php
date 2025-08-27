@@ -1,20 +1,22 @@
 <?php
 /**
- * Plugin Name:       QRCODE 10 Generator
- * Plugin URI:        https://qrcode.prositesbrasil.com.br/
- * Description:       Gerador de QR Code moderno com múltiplas opções de personalização.
- * Version:           1.0
- * Author:            leowebmaster
- * Author URI:        https://prositesbrasil.com.br/
- * License:           GPL-2.0-or-later
- * License URI:       https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
- * Text Domain:       qrcode-10-generator
+ * Plugin Name:     QRCODE 10 Generator
+ * Plugin URI:      https://qrcode.prositesbrasil.com.br/
+ * Description:     Gerador de QR Code moderno com múltiplas opções de personalização.
+ * Version:         1.0
+ * Author:          leowebmaster
+ * Author URI:      https://prositesbrasil.com.br/
+ * License:         GPL-2.0-or-later
+ * License URI:     https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:     qrcode-10-generator
  */
 
+// Se o arquivo for acessado diretamente, o plugin não funcionará
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
+// Define as constantes do plugin
 define( 'QRCODE10_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'QRCODE10_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 
@@ -29,9 +31,9 @@ class QRCODE10_Generator {
 
     public function add_admin_menu_page() {
         add_menu_page(
-            // String do título da página, traduzível
+            // Título da página
             esc_html__( 'QRCODE 10 Generator', 'qrcode-10-generator' ),
-            // String do texto do menu, traduzível
+            // Texto do menu
             esc_html__( 'QRCODE 10', 'qrcode-10-generator' ), 
             'manage_options',
             'qrcode-10-generator',

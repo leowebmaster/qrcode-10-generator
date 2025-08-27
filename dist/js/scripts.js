@@ -50,7 +50,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
             qrcodeInstance.append(qrcodeContainer);
 
             function updateQRCode() {
-                const url = $('#qrcode-url').val() || 'https://google.com';
+                const url = $('#qrcode-url').val();
+                
+                // Validação de entrada: Verifica se a URL é válida e não está vazia
+                if (url.length === 0) {
+                    return; // Sai da função se a URL estiver vazia
+                }
+
                 const size = parseInt($('#qrcode-size').val()) || 200;
                 const dotsColor = $('#qrcode-color').val() || '#000000';
                 const cornersSquareColor = $('#qrcode-eyes-color').val() || '#000000';
